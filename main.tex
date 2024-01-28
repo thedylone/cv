@@ -1,0 +1,153 @@
+\documentclass{cv}
+
+\begin{document}
+\Name[]{Dylan Chua}
+\begin{minipage}[h]{.33\textwidth-0.33\margin}
+    \begin{itemize}
+    \setlength{\itemsep}{0.5em}
+        \item[\Large\faAt] \href{mailto:dylan.chua22@imperial.ac.uk}{dylan.chua22@imperial.ac.uk}
+        \item[\Large\faLaptop] \href{https://thedylone.pages.dev}{thedylone.pages.dev}
+    \end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{.33\textwidth-0.33\margin}
+    \vspace{0.5em}
+    \begin{itemize}
+    \centering
+    \setlength{\itemsep}{0.5em}
+        \item[\Large\faMobile] \href{tel:4407874074827}{+44 07874074827} 
+        \item[\Large\faMobile] \href{tel:6582186864}{+65 82186864}
+    \end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{.33\textwidth-0.33\margin}
+    % \raggedleft
+    \vspace{0.5em}
+    \begin{itemize}
+    \raggedleft
+    \setlength{\itemsep}{0.5em}
+        \item[\Large\faLinkedinSquare] \href{https://www.linkedin.com/in/thedylone/}{linkedin/thedylone}
+        \item[\Large\faGithub] \href{https://github.com/thedylone}{github/thedylone}
+    \end{itemize}
+\end{minipage}
+
+\section{Profile}
+\raggedright
+Imperial College London 2\textsuperscript{nd} Year Mechanical Engineering student with a passionate interest in software development and simulations. Programming experience gained from internships and hobby/part-time projects. 
+
+\section{Education}
+\begin{subsections}
+    \subtitle{MEng Mechanical Engineering \hfill London, United Kingdom}
+    \item\DatedSubsection{Imperial College London}{Oct 2022 -- Present}
+    \begin{itemize}
+        \item 1\textsuperscript{st} Year: Dean's List, Top Scorer in Professional Engineering Skills
+        \item Modules: Thermofluids, Solid Mechanics, Computing, Mechatronics
+        \item Extra-curricular: German
+    \end{itemize}
+\end{subsections}
+
+\section{Work Experience}
+\begin{subsections}
+    \subtitle{Simulation \& Training Systems Hub, Defence Science and Technology Agency}
+    \item\DatedSubsection{3D Software Development Intern}{Jul 2023 -- Sep 2023}
+    \begin{itemize}
+        \item Developed a \href{https://github.com/thedylone/tile-segmentation-pipeline}{novel pipeline in Python} for the automatic segmentation of 3D Tiles of the world, a 3D format allowing storage of massive datasets, to be used in simulations and data analyses
+        \item Implemented semantic segmentation through the use of machine learning, specifically a transformer, trained on satellite imagery to label each pixel of the 3D texture
+        \item Analysed and deconstructed specifications of 3D formats glTF \& 3D Tiles to construct format readers and exporters to traverse a 3D Tileset and subsequently export a new tileset with individual files storing the metadata
+        \item Maintained modularity and version control to allow team members to be able to substitute their segmentation methods effortlessly
+        \item Co-authored a \href{https://medium.com/d-classified/segmentation-pipeline-for-3d-tiles-1303fcb5e6be}{published write-up on Medium} detailing the engineering process of the pipeline, and presented to the Director of the department
+        \item Skills: Python, System integration, Machine learning
+    \end{itemize}
+
+    \subtitle{Command, Control and Communications Development, Defence Science and Technology Agency}
+    \item\DatedSubsection{Simulations Software Development Intern}{Feb 2022 -- Jul 2022}
+    \begin{itemize}
+        \item Designed a \href{https://github.com/thedylone/unity-drone-simulator}{high fidelity simulator using C\# in Unity} meant to replicate the actual environment and physics of drones in tracking and battle
+        \item Achieved streaming of drone footage via RTSP by feeding simulator data into FFmpeg, as well as remote control of the hunter drone through a networking library ZeroMQ
+        \item Enabled the team to quickly test Computer Vision models on the output video stream to identify the target drone, and freely experiment with parameters for the PID Controller to navigate the hunter drone
+        \item Reduced the need for live testing using actual drones, improving efficiency and workflow for the entire team
+        \item Added extra functionality to randomly generate images of a drone in the environment to produce labelled synthetic data for Computer Vision training
+        \item Wrote an \href{https://medium.com/d-classified/unity-as-a-testbed-for-autonomy-development-1e326323c68d}{article on Medium} documenting the simulator and showcasing its utility in testing a Computer Vision model and a PID Controller
+        \item Skills: C\#, Unity, Computer networking, UI/UX, 3D Modelling, Teamwork
+    \end{itemize}
+
+    \subtitle{SAF Counselling Centre}
+    \item\DatedSubsection{Assistant Counselling Specialist}{Feb 2020 -- Feb 2022}
+    \begin{itemize}
+        \item Selected as the main specialist in extracting client data from the Jira system using Jira Query Language and analysing the data to be presented and reported to stakeholders
+        \item Initiated massive workflow automation through Visual Basic for Applications scripts in Excel and Outlook to draw information from the Jira system database and rapidly generate emails 
+        \item Organised and scheduled client appointments for counsellors, and manned the 24-Hour Counselling Hotline
+        \item Managed the team of specialists as the appointed leader, which involved interviewing applicants, overseeing the training progression of newer members and assigning the team for the duty roster
+        \item Skills: Data analysis, Database querying, Team management, Counselling and Active Listening
+    \end{itemize}
+\end{subsections}
+
+% \section{Research Experience}
+% \begin{subsections}
+%     \subtitle{Institute for Health Innovation and Technology, National University of Singapore}
+%     \item\DatedSubsection{Transparent, Self-healing and Stretchable Conductor for Electroluminescent Device Applications}{May 2018 -- Jan 2019}
+%     \begin{itemize}
+%         \item Synthesised and characterised a self-healing polymer electrode
+%         \item Won the Singapore Science and Engineering Fair Special Award
+%         \item Speaker at Youth Science Conference 2019, Won Best Poster Award
+%     \end{itemize}
+
+%     \subtitle{Natural Science and Science Education, Nanyang Technological University}
+%     \item\DatedSubsection{New 'Stimuli'-Responsive Hydrogels for targeted applications}{Mar 2016 -- Jan 2017}
+%     \begin{itemize}
+%         \item Synthesised and characterised the adsorption of a unique hydrogel
+%         \item Research Education 2016 Bronze Award \& Certificate of High Distinction
+%         \item Presented at Kobe High School, Japan for a research exchange programme
+%     \end{itemize}
+% \end{subsections}
+
+\section{Projects}
+\begin{subsections}
+    % \subtitle{laffey bot -- a VALORANT tracker and notifier}
+    \item\subsection{Game Tracker Discord Bot}
+    \begin{itemize}
+        \item Developed \href{https://thedylone.github.io/laffey-bot/}{a tracking application linked to Discord} that retrieves the user's in-game statistics and information, which is stored in a PostgreSQL database.
+        \item Deployed the application entirely on cloud computing resources
+        \item Skills: Python, SQL, API, Cloud computing with PaaS
+    \end{itemize}
+
+    \item\subsection{3D Globe Visualiser}
+    \begin{itemize}
+        \item Visualised \href{https://thedylone.github.io/travel-history/}{my travel history data on an interactive 3D globe} using React and a 3D library ThreeJS
+        \item Skills: React, ThreeJS
+    \end{itemize}
+
+    \item\subsection{Full Stack Video Player}
+    \begin{itemize}
+        \item Built \href{https://github.com/thedylone/node-video-player}{a full-stack application similar to YouTube} with a backend Node server hosting and serving videos, and a frontend React webpage to display the gallery of videos as well as video playback 
+        \item Skills: React, TypeScript, Vite, NodeJS
+    \end{itemize}
+
+    \item\subsection{Reddit Bot}
+    \begin{itemize}
+        \item Created \href{https://github.com/thedylone/suipiss}{a Reddit bot} to access the API and triggers a randomly generated reply when the keyword is present in a new post or comment
+        \item Skills: Python
+    \end{itemize}
+\end{subsections}
+
+\section{Awards and Achievements}
+\begin{subsections}
+    \DatedEntry{Mechanical Engineering Prize for Outstanding Academic Performance (Professional Engineering Skills)}{2023}
+    \DatedEntry{\href{https://www.ntu.edu.sg/eee/student-life/ideasjam-by-garage@eee-continues-to-drive-the-entrepreneurial-spirit-in-ntu-students}{Nanyang Technological University IdeasJam -- Best Pre-University}}{2022}
+    \DatedEntry{\href{https://devpost.com/software/hop-roll-2022}{National University of Singapore Hack\&Roll -- Top Prize}}{2022}
+    \DatedEntry{\href{https://www.astrochallenge.org/_files/ugd/b182bf_4243ea380b084eeb97408bc9bbd0e1c5.pdf}{Astrochallenge -- 16\textsuperscript{th} Individual Placing, 2\textsuperscript{nd} Place, Best Observation}}{2019}
+    \DatedEntry{\href{https://www.science.edu.sg/docs/default-source/scs-documents/for-schools/competitions/ssef/ssef-2019-awards-list_updated-(2).pdf}{Singapore Science and Engineering Fair -- SUTD Sharp Award in Aviation}}{2019}
+    \DatedEntry{\href{https://astronomy.sg/singapore-astronomy-olympiad/sao-hall-of-fame/}{Singapore Astronomy Olympiad -- Bronze}}{2018}
+    \DatedEntry{Singapore Junior Physics Olympiad -- Gold}{2017}
+\end{subsections}
+
+\section{Skills}
+\begin{subsections}
+    \item \textbf{Programming:} Python, C\#, TypeScript, HTML/CSS/React, \LaTeX
+    \item \textbf{Software:} Microsoft 365, Git, VSCode, OriginLab, Unity, Adobe Photoshop, Adobe Premiere Pro
+    \item \textbf{3D Design:} SOLIDWORKS, ANSYS, Blender
+    \item \textbf{Languages:} English (First Language), Mandarin
+    \item \textbf{Interests:} Puzzles, Cooking, Imperial College Baseball and Softball
+\end{subsections}
+
+\end{document}
