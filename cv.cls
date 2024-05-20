@@ -35,32 +35,35 @@
 \FPdiv\myage{\result}{365.2425}
 \FPtrunc\myage{\myage}{0}
 
-\newcommand\subtitle[1]{\def\@subtitle{#1}}
+\newcommand\subtitle[1]{\normalfont\textit{#1}}
 \titleformat{\section}
-    {\Large\scshape\raggedright}
-    {}{0em} % prefix for sections
-    {} % code before
-    [\titlerule]
+{\Large\scshape\raggedright}
+{}{0em} % prefix for sections
+{} % code before
+[\titlerule]
 \titleformat{\subsection}
-    {\large\scshape\raggedright\bf}
-    {}{0em} % prefix for sections
-    {} % code before
-    [\@ifundefined{@subtitle}{}{\normalfont\textit{\@subtitle}}]
+{\large\scshape\raggedright\bf}
+{}{0em} % prefix for sections
+{} % code before
+[]
 \titlespacing{\subsection}{0pt}{\baselineskip}{2pt}
 
 \newenvironment{subsections}
-    {
+{
     \begin{itemize}[leftmargin=0.15in, label={}]
-    }{
+        }{
     \end{itemize}
-    }
+}
 
+\newcommand{\Subsection}[1]{
+    \item\subsection[#1]{#1}
+}
 
 \newcommand{\DatedSection}[2]{%
-  \section[#1]{#1 \hfill #2}%
+    \item\section[#1]{#1 \hfill #2}%
 }
 \newcommand{\DatedSubsection}[2]{
-  \subsection[#1]{#1 \hfill #2}
+    \item\subsection[#1]{#1 \hfill #2}
 }
 
 % \newcommand{\Name}[4][]{%
@@ -72,12 +75,12 @@
 % }
 
 \newcommand{\Name}[2][]{%
-  \centering{\Huge\textbf{#2}}\hfill #1\\
+    \centering{\Huge\textbf{#2}}\hfill #1\\
 }
 
 \newcommand{\DatedEntry}[2]{
     \item
     \begin{tabularx}{\linewidth}{X r}
-      #1 & #2
+        #1 & #2
     \end{tabularx}
 }
