@@ -25,22 +25,28 @@ jobs:
 
       - name: get date
         id: date
-        run: echo "::set-output name=date::$(date +'%Y %b') name=date_num::$(date +'%Y-%m')"
+        run: |
+          echo "date=$(date +'%Y %b') " >> $GITHUB_OUTPUT
 
       - name: compile latex
         uses: xu-cheng/latex-action@3.2.0
         with:
           root_file: main.tex
 
-      - name: upload pdf
-        uses: actions/upload-artifact@v4
-        with:
-          name: PDF
-          path: DylanChua_CV.pdf
+      - name: rename pdf
+        run: mv main.pdf DylanChua_CV.pdf
+
+      - name: create tag
+        id: tag
+        run: |
+          "tag=$(date +'%Y-%m')" 
+          echo "tag=$TAG" >> $GITHUB_OUTPUT 
+          git tag $TAG ${GITHUB_SHA}
+          git push origin $TAG
 
       - name: create release
         uses: softprops/action-gh-release@v2.0.8
         with:
           name: ${{ steps.date.outputs.date }}
-          tag_name: ${{ steps.date.outputs.date_num }}
+          tag_name: ${{ steps.tag.outputs.tag }}
           files: DylanChua_CV.pdf
