@@ -33,17 +33,17 @@
 
 \section{Profile}
 \raggedright
-Imperial College London 3\textsuperscript{rd} Year Mechanical Engineering student with a passionate interest in software development and simulations. Programming experience gained from internships and hobby/part-time projects.
+Imperial College London 3\textsuperscript{rd} Year Mechanical Engineering student with a passionate interest in software development and simulation. Programming experience gained from internships and hobby/part-time projects.
 
 \section{Education}
 \begin{subsections}
     \DatedSubsection{Imperial College London}{Oct 2022 -- Present}
     \subtitle{MEng Mechanical Engineering \hfill London, United Kingdom}
     \begin{itemize}
-        \item 1\textsuperscript{st} Year: Dean's List, Top Scorer in Professional Engineering Skills
-        % \item 2\textsuperscript{nd} Year: Dean's List, Top Scorer in Professional Engineering Skills
-        \item Modules: Thermofluids, Solid Mechanics, Computing, Mechatronics
-        \item Embedded C for Microcontrollers, Statistics
+        \item 1\textsuperscript{st} Year: 85.30\% (First Class Honours), Dean's List, Top Scorer in Professional Engineering Skills
+        \item 2\textsuperscript{nd} Year: 84.55\% (First Class Honours)%, Dean's List, Top Scorer in Professional Engineering Skills
+        \item Modules: Mathematics, Computing, Thermofluids, Solid Mechanics, Mechatronics
+        \item Embedded C for Microcontrollers, Statistics, Fluid Mechanics 3, Mechatronics 3, Machine Dynamics and Vibrations
         \item Extra-curricular: German
     \end{itemize}
 \end{subsections}
@@ -51,49 +51,52 @@ Imperial College London 3\textsuperscript{rd} Year Mechanical Engineering studen
 \section{Work Experience}
 \begin{subsections}
     \DatedSubsection{Airframe Engineer}{Feb 2024 -- Present}
-    \subtitle{Karman Space Programme}
+    \subtitle{Karman Space Programme \hfill London, United Kingdom}
     \begin{itemize}
-        \item Recruited to be the first student-led team to reach space with reusable rockets
-        \item Evaluated the rocket airframe, stringers and bulkheads analytically
-        \item Simulated loads on the airframe using Finite Element Analysis
+        \item Personally recruited to be \href{https://www.karmanspace.co.uk/}{the first student-led team to reach space with reusable rockets}
+        \item Analytically evaluated the rocket airframe, stringers and bulkheads
+        \item Simulated in Abaqus and Ansys varying loading conditions on the airframe using Finite Element Analysis
         \item Collaborated with external vendors and other subteams to integrate and manufacture
-        \item Skills: FEA, Simulation, Teamwork
+        \item Skills: FEA, Simulation, Teamwork, System integration
     \end{itemize}
 
     \DatedSubsection{Mechanical Design Intern}{Jul 2024 -- Sep 2024}
-    \subtitle{Guided Systems, DSO National Laboratories}
-    % \begin{itemize}
-    %     \item 
-    %     \item Skills:
-    % \end{itemize}
+    \subtitle{Guided Systems, DSO National Laboratories \hfill Singapore}
+    \begin{itemize}
+        \item Derived the physics of torsional and compression springs from beam theory
+        \item Formulated an Excel workbook to automatically calculate spring parameters (without using VBA), speeding up engineering design processes
+        \item Innovated several mechanisms and further refined one selected design to be used in production
+        \item Skills: CAD, Excel, Onshape
+    \end{itemize}
 
     \DatedSubsection{3D Software Development Intern}{Jul 2023 -- Sep 2023}
-    \subtitle{Simulation \& Training Systems Hub, Defence Science and Technology Agency}
+    \subtitle{Simulation \& Training Systems Hub, Defence Science and Technology Agency \hfill Singapore}
     \begin{itemize}
-        \item Developed a \href{https://github.com/thedylone/tile-segmentation-pipeline}{novel pipeline in Python} for the automatic segmentation of 3D Tiles of the world, a 3D format allowing storage of massive datasets, to be used in simulations and data analyses
-        \item Implemented semantic segmentation through the use of machine learning, specifically a transformer, trained on satellite imagery to label each pixel of the 3D texture
-        \item Analysed and deconstructed specifications of 3D formats glTF \& 3D Tiles to construct format readers and exporters to traverse a 3D Tileset and subsequently export a new tileset with individual files storing the metadata
-        \item Maintained modularity and version control to allow team members to be able to substitute their segmentation methods effortlessly
-        \item Co-authored a \href{https://medium.com/d-classified/segmentation-pipeline-for-3d-tiles-1303fcb5e6be}{published write-up on Medium} detailing the engineering process of the pipeline, and presented to the Director of the department
+        \item Developed a \href{https://github.com/thedylone/tile-segmentation-pipeline}{novel pipeline} for automatic segmentation of 3D Tiles to be used in simulations and data analyses
+        \item Implemented semantic segmentation using a Transformer trained on satellite imagery to label each pixel of the 3D texture, and thereby labelling each vertex of the 3D object
+        \item Analysed and deconstructed specifications of formats glTF \& 3D Tiles to construct format readers and exporters to traverse a 3D Tileset and subsequently export a new tileset stored with metadata
+        \item Maintained modularity and version control allowing the team to substitute their segmentation methods effortlessly
+        \item Co-authored a \href{https://medium.com/d-classified/segmentation-pipeline-for-3d-tiles-1303fcb5e6be}{write-up on Medium} detailing the development process, and presented to the department's Director
         \item Skills: Python, System integration, Machine learning
     \end{itemize}
 
     \DatedSubsection{Simulations Software Development Intern}{Feb 2022 -- Jul 2022}
-    \subtitle{Command, Control and Communications Development, Defence Science and Technology Agency}
+    \subtitle{Command, Control and Communications Development, Defence Science and Technology Agency \hfill Singapore}
     \begin{itemize}
-        \item Designed a \href{https://github.com/thedylone/unity-drone-simulator}{high fidelity simulator using C\# in Unity} meant to replicate the actual environment and physics of drones in tracking and battle
+        \item Designed a \href{https://github.com/thedylone/unity-drone-simulator}{high fidelity simulator using C\# in Unity} to replicate the actual environment and physics of drones
         \item Achieved streaming of drone footage via RTSP by feeding simulator data into FFmpeg, as well as remote control of the hunter drone through a networking library ZeroMQ
-        \item Enabled the team to quickly test Computer Vision models on the output video stream to identify the target drone, and freely experiment with parameters for the PID Controller to navigate the hunter drone
+        \item Enabled the team to quickly test Computer Vision models on the output video stream to identify the target drone, and freely finetune parameters for the PID Navigation Controller
         \item Reduced the need for live testing using actual drones, improving efficiency and workflow for the entire team
-        \item Added extra functionality to randomly generate images of a drone in the environment to produce labelled synthetic data for Computer Vision training
-        \item Wrote an \href{https://medium.com/d-classified/unity-as-a-testbed-for-autonomy-development-1e326323c68d}{article on Medium} documenting the simulator and showcasing its utility in testing a Computer Vision model and a PID Controller
+        \item Added extra functionality for Computer Vision training to automatically generate labelled synthetic data of drones
+        \item Wrote an \href{https://medium.com/d-classified/unity-as-a-testbed-for-autonomy-development-1e326323c68d}{article on Medium} documenting and showcasing its utility in testing Computer Vision
         \item Skills: C\#, Unity, Computer networking, UI/UX, 3D Modelling, Teamwork
     \end{itemize}
 
     \DatedSubsection{Assistant Counselling Specialist}{Feb 2020 -- Feb 2022}
-    \subtitle{SAF Counselling Centre}
+    \subtitle{SAF Counselling Centre \hfill Singapore}
     \begin{itemize}
-        \item Selected as the main specialist in extracting client data from the Jira system using Jira Query Language and analysing the data to be presented and reported to stakeholders
+        \item Selected as the main specialist in extracting client data from the Jira system using Jira Query Language
+        \item Analysed the data to be presented and reported to stakeholders
         \item Initiated massive workflow automation through Visual Basic for Applications scripts in Excel and Outlook to draw information from the Jira system database and rapidly generate emails
         \item Organised and scheduled client appointments for counsellors, and manned the 24-Hour Counselling Hotline
         \item Managed the team of specialists as the appointed leader, which involved interviewing applicants, overseeing the training progression of newer members and assigning the team for the duty roster
@@ -123,6 +126,12 @@ Imperial College London 3\textsuperscript{rd} Year Mechanical Engineering studen
 
 \section{Projects}
 \begin{subsections}
+    \Subsection{Numerical analysis of Black-Scholes Partial Differential Equation}
+    \begin{itemize}
+        \item \href{https://github.com/thedylone/black-scholes-numerical}{Utilised explicit finite difference and implicit Crank-Nicolson methods} to solve European-style options price
+        \item Skills: Python, Numerical analysis
+    \end{itemize}
+
     \Subsection{Game Tracker Discord Bot}
     % \subtitle{laffey bot -- a VALORANT tracker and notifier}
     \begin{itemize}
@@ -151,8 +160,8 @@ Imperial College London 3\textsuperscript{rd} Year Mechanical Engineering studen
 
     \Subsection{Reddit Bot}
     \begin{itemize}
-        \item Created \href{https://github.com/thedylone/suipiss}{a Reddit bot} to access the API and triggers a randomly generated reply when the keyword is present in a new post or comment
-        \item Skills: Python
+        \item Ran \href{https://github.com/thedylone/suipiss}{a Reddit bot} completely on cloud platforms to access the API and triggers a randomly generated reply when the keyword is present in a new post or comment
+        \item Skills: Python, Cloud deployment
     \end{itemize}
 \end{subsections}
 
@@ -171,9 +180,9 @@ Imperial College London 3\textsuperscript{rd} Year Mechanical Engineering studen
 \begin{subsections}
     \item \textbf{Programming:} Python, C, C\#, TypeScript, HTML/CSS/React, R, \LaTeX
     \item \textbf{Software:} Microsoft 365, Git, VSCode, OriginLab, Unity, Adobe Photoshop, Adobe Premiere Pro
-    \item \textbf{3D Design:} SOLIDWORKS, ANSYS, Blender
+    \item \textbf{3D Design:} SOLIDWORKS, Onshape, ANSYS, Blender
     \item \textbf{Languages:} English (First Language), Mandarin
-    \item \textbf{Interests:} Puzzles, Cooking, Imperial College Baseball and Softball
+    \item \textbf{Interests:} Puzzles \& puzzlehunts, Cooking, Imperial College Baseball and Softball
 \end{subsections}
 
 \end{document}
