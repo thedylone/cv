@@ -39,7 +39,7 @@ jobs:
       - name: create tag
         id: tag
         run: |
-          "tag=$(date +'%Y-%m')" 
+          TAG=$(date +'%Y-%m')
           echo "tag=$TAG" >> $GITHUB_OUTPUT 
           git tag $TAG ${GITHUB_SHA}
           git push origin $TAG
