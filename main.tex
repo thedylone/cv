@@ -42,8 +42,7 @@ Imperial College London 3\textsuperscript{rd} Year Mechanical Engineering studen
     \begin{itemize}
         \item 1\textsuperscript{st} Year: 85.30\% (First Class Honours), Dean's List, Top Scorer in Professional Engineering Skills
         \item 2\textsuperscript{nd} Year: 84.55\% (First Class Honours), Dean's List
-        \item Modules: Mathematics, Computing, Thermofluids, Solid Mechanics, Mechatronics
-        \item Embedded C for Microcontrollers, Statistics, Fluid Mechanics 3, Mechatronics 3, Machine Dynamics and Vibrations
+        \item Modules: Mathematics, Computing, Thermofluids, Solid Mechanics, Mechatronics \\ Embedded C for Microcontrollers, Statistics, Fluid Mechanics 3, Mechatronics 3, Machine Dynamics and Vibrations
         \item Extra-curricular: Undergraduate Teaching Assistant, German
     \end{itemize}
 \end{subsections}
@@ -54,10 +53,11 @@ Imperial College London 3\textsuperscript{rd} Year Mechanical Engineering studen
     \subtitle{Karman Space Programme \hfill London, United Kingdom}
     \begin{itemize}
         \item Personally recruited to contribute \href{https://www.karmanspace.co.uk/}{to become the first student-led team to reach space with reusable rockets}
-        \item Analytically evaluated and numerically calculated in Python loads on the rocket airframe, stringers and bulkheads
-        \item Simulated in Abaqus and Ansys varying loading conditions on the airframe using Finite Element Analysis
+        \item Analytically evaluated with beam theory both static and dynamic load cases on the rocket
+        \item Developed a numerical calculator in Python to rapidly determine shear and bending moments
+        \item Simulated in Abaqus using Finite Element Analysis to verify calculations and perform more complex loads
         \item Collaborated with external vendors and other subteams to integrate and manufacture
-        \item Skills: FEA, Simulation, Teamwork, System integration
+        \item \textbf{Skills}: Beam theory, FEA, Simulation, Teamwork, System integration
     \end{itemize}
 
     \DatedSubsection{Mechanical Design Intern}{Jul 2024 -- Sep 2024}
@@ -65,31 +65,31 @@ Imperial College London 3\textsuperscript{rd} Year Mechanical Engineering studen
     \begin{itemize}
         \item Derived the physics of torsional and compression springs from beam theory
         \item Formulated Excel sheets to automatically calculate spring parameters (without VBA), accelerating design processes
-        \item Separately innovated several rope-release mechanisms and further optimised a selected design to be produced
-        \item Skills: CAD, Excel, Onshape
+        \item Conceptualised rope-release mechanisms triggered by gas generators, optimised a selected design to be produced
+        \item \textbf{Skills}: Beam theory, CAD, Excel, Onshape, Engineering design process
     \end{itemize}
 
     \DatedSubsection{3D Software Development Intern}{Jul 2023 -- Sep 2023}
     \subtitle{Simulation \& Training Systems Hub, Defence Science and Technology Agency \hfill Singapore}
     \begin{itemize}
         \item Developed a \href{https://github.com/thedylone/tile-segmentation-pipeline}{novel pipeline} for automatic segmentation of 3D Tiles to be used in simulations and data analyses
-        \item Implemented semantic segmentation using a Transformer trained on satellite imagery to label each pixel of the 3D texture, and thereby labelling each vertex of the 3D object
+        \item Implemented semantic segmentation using a Transformer trained on satellite imagery to label each pixel of the 2D texture, and thereby each vertex of the 3D object
         \item Analysed and deconstructed specifications of formats glTF \& 3D Tiles to construct format readers and exporters to traverse a 3D Tileset and subsequently export a new tileset stored with metadata
         \item Maintained modularity and version control allowing the team to substitute their segmentation methods effortlessly
         \item Co-authored a \href{https://medium.com/d-classified/segmentation-pipeline-for-3d-tiles-1303fcb5e6be}{write-up on Medium} detailing the development process, and presented to the department's Director
-        \item Skills: Python, System integration, Machine learning
+        \item \textbf{Skills}: Python, System integration, Machine learning
     \end{itemize}
 
     \DatedSubsection{Simulations Software Development Intern}{Feb 2022 -- Jul 2022}
     \subtitle{Command, Control and Communications Development, Defence Science and Technology Agency \hfill Singapore}
     \begin{itemize}
         \item Designed a \href{https://github.com/thedylone/unity-drone-simulator}{high fidelity simulator using C\# in Unity} to replicate the actual environment and physics of drones
-        \item Achieved streaming of drone footage via RTSP by feeding simulator data into FFmpeg, as well as remote control of the hunter drone through a networking library ZeroMQ
-        \item Enabled the team to quickly test Computer Vision models on the output video stream to identify the target drone, and freely finetune parameters for the PID Navigation Controller
+        \item Achieved livestreaming of drone footage via RTSP by capturing camera frames into FFmpeg, as well as remote control of the hunter drone through a networking library ZeroMQ
+        \item Enabled the team to quickly test Computer Vision models on the output video stream to identify the target drone, and freely finetune parameters for the PID Navigation Controller to rapidly chase the target drone
         \item Reduced the need for live testing using actual drones, improving efficiency and workflow for the entire team
         \item Added extra functionality for Computer Vision training to automatically generate labelled synthetic data of drones
         \item Wrote an \href{https://medium.com/d-classified/unity-as-a-testbed-for-autonomy-development-1e326323c68d}{article on Medium} documenting and showcasing its utility in testing Computer Vision
-        \item Skills: C\#, Unity, Computer networking, UI/UX, 3D Modelling, Teamwork
+        \item \textbf{Skills}: C\#, Unity, Computer networking, UI/UX, 3D Modelling, Teamwork
     \end{itemize}
 
     \DatedSubsection{Assistant Counselling Specialist}{Feb 2020 -- Feb 2022}
@@ -97,10 +97,10 @@ Imperial College London 3\textsuperscript{rd} Year Mechanical Engineering studen
     \begin{itemize}
         \item Selected as the main specialist in extracting client data from the Jira system using Jira Query Language
         \item Analysed the data to be presented and reported to stakeholders
-        \item Initiated massive workflow automation through Visual Basic for Applications scripts in Excel and Outlook to draw information from the Jira system database and rapidly generate emails
+        \item Initiated massive workflow automation through VBA scripts in Excel and Outlook to draw information from the Jira system database and rapidly generate emails
         \item Organised and scheduled client appointments for counsellors, and manned the 24-Hour Counselling Hotline
         \item Managed the team of specialists as the appointed leader, which involved interviewing applicants, overseeing the training progression of newer members and assigning the team for the duty roster
-        \item Skills: Data analysis, Database querying, Team management, Counselling and Active Listening
+        \item \textbf{Skills}: Data analysis, Database querying, Team management, Counselling and Active Listening
     \end{itemize}
 \end{subsections}
 
@@ -129,7 +129,7 @@ Imperial College London 3\textsuperscript{rd} Year Mechanical Engineering studen
     \Subsection{Numerical analysis of Black-Scholes Partial Differential Equation}
     \begin{itemize}
         \item \href{https://github.com/thedylone/black-scholes-numerical}{Utilised explicit finite difference and implicit Crank-Nicolson methods} to solve European-style options price
-        \item Skills: Python, Numerical analysis
+        \item \textbf{Skills}: Python, Numerical analysis
     \end{itemize}
 
     \Subsection{Game Tracker Discord Bot}
@@ -137,31 +137,31 @@ Imperial College London 3\textsuperscript{rd} Year Mechanical Engineering studen
     \begin{itemize}
         \item Developed \href{https://thedylone.github.io/laffey-bot/}{a tracking application linked to Discord} that retrieves the user's in-game statistics and information, which is stored in a PostgreSQL database.
         \item Deployed the application entirely on cloud computing resources
-        \item Skills: Python, SQL, API, Cloud computing with PaaS
+        \item \textbf{Skills}: Python, SQL, API, Cloud computing with PaaS
     \end{itemize}
 
     \Subsection{Web3 Website}
     \begin{itemize}
         \item Designed the front-end of a \href{https://bonk-shrine.vercel.app/}{shrine-inspired \$BONK burning website}, including art assets
-        \item Skills: React, CSS, UI/UX
+        \item \textbf{Skills}: React, CSS, UI/UX
     \end{itemize}
 
     \Subsection{3D Globe Visualiser}
     \begin{itemize}
         \item Visualised \href{https://thedylone.github.io/travel-history/}{my travel history data on an interactive 3D globe} using React and a 3D library ThreeJS
-        \item Skills: React, ThreeJS
+        \item \textbf{Skills}: React, ThreeJS
     \end{itemize}
 
     \Subsection{Full Stack Video Player}
     \begin{itemize}
         \item Built \href{https://github.com/thedylone/node-video-player}{a full-stack application similar to YouTube} with a backend Node server hosting and serving videos, and a frontend React webpage to display the gallery of videos as well as video playback
-        \item Skills: React, TypeScript, Vite, NodeJS
+        \item \textbf{Skills}: React, TypeScript, Vite, NodeJS
     \end{itemize}
 
     \Subsection{Reddit Bot}
     \begin{itemize}
         \item Ran \href{https://github.com/thedylone/suipiss}{a Reddit bot} completely on cloud platforms to access the API and triggers a randomly generated reply when the keyword is present in a new post or comment
-        \item Skills: Python, Cloud deployment
+        \item \textbf{Skills}: Python, Cloud deployment
     \end{itemize}
 \end{subsections}
 
@@ -180,7 +180,7 @@ Imperial College London 3\textsuperscript{rd} Year Mechanical Engineering studen
 
 \section{Skills}
 \begin{subsections}
-    \item \textbf{Programming:} Python, C, C\#, TypeScript, HTML/CSS/React, R, \LaTeX
+    \item \textbf{Programming:} Python, C++, C\#, TypeScript, HTML/CSS/React, R, \LaTeX
     \item \textbf{Software:} Microsoft 365, Git, VSCode, OriginLab, Unity, Adobe Photoshop, Adobe Premiere Pro
     \item \textbf{3D Design:} SOLIDWORKS, Onshape, ANSYS, Blender
     \item \textbf{Languages:} English (First Language), Mandarin
