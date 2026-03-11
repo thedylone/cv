@@ -37,17 +37,24 @@ Passionate about software engineering and simulations, I enjoy designing machine
 \section{Education}
 \begin{subsections}
     \DatedSubsection{Harvard University}{Sep 2025 -- May 2026}
-    \subtitle{SM Computational Science and Engineering \hfill Massachusetts, United States}
+    \subtitle{SM Computational Science and Engineering
+    -- Expected GPA: 3.92 / 4.0
+        \hfill Massachusetts, United States}
     \begin{itemize}
-        \item Courses: Stochastic Optimisation, High Performance Scientific Computing, Algorithms
+        \item Courses: \parbox[t]{\dimexpr\linewidth-\labelwidth-\labelsep\relax-2em}{Design \& Analysis of Algorithms, 
+        High Performance Computing \& Big Data Systems \textit{(Parallel, Distributed, GPU CUDA)}, 
+        Stochastic Methods \& Decision Theory \textit{(Regression, Optimisation, Bayesian Inference)}}
+        \vspace{0.01em}
+        \item Extra-curricular: MIT Puzzle Club
     \end{itemize}
 
     \DatedSubsection{Imperial College London}{Oct 2022 -- Jun 2025}
-    \subtitle{BEng Mechanical Engineering -- First Class Honours, 1$^{st}$ overall \hfill London, United Kingdom}
-    \begin{itemize}
-        \item Governors' BEng Prize for Top Scorer Overall
+    \subtitle{BEng Mechanical Engineering -- First Class Honours, 1$^{st}$ in cohort overall 
+        \hfill London, United Kingdom}
+    \begin{itemize}[leftmargin=!, itemindent=-1em]
+        \item \hyperlink{award_BEng}{Governors' BEng Prize for Top Scorer Overall}
         \item Modules: Mechatronics \& Machine Dynamics, Mathematics, Computing, Thermofluids, Solid Mechanics
-        \item Dean's List, Top Scorer in Professional Engineering Skills, Best Superproject in Design Make and Test Project
+        \item Dean's List, Top Scorer in Professional Engineering Skills, \hyperlink{proj_DMT}{Best Superproject in Design Make and Test Project}
         \item Extra-curricular: Undergraduate Teaching Assistant, German
     \end{itemize}
 \end{subsections}
@@ -56,7 +63,7 @@ Passionate about software engineering and simulations, I enjoy designing machine
 \begin{subsections}
     \DatedSubsection{Software Development Intern}{Jun 2025 -- Aug 2025}
     \subtitle{MathWorks \hfill Cambridge, United Kingdom}
-    \begin{itemize}
+    \begin{itemize}[leftmargin=!, itemindent=-1em]
         \item Revamped software architecture in \href{https://www.mathworks.com/products/autosar.html}{AUTOSAR Blockset}, a toolbox for developing AUTOSAR software
         \item Accelerated software performance up to 90\% faster, with the capacity to significantly speed up customer workflows
         \item \textbf{Skills}: MATLAB, C++, Agile development, CI/CD
@@ -73,9 +80,9 @@ Passionate about software engineering and simulations, I enjoy designing machine
 
     \DatedSubsection{3D Software Development Intern}{Jul 2023 -- Sep 2023}
     \subtitle{Simulation \& Training Systems Hub, Defence Science and Technology Agency \hfill Singapore}
-    \begin{itemize}
-        \item Developed a \href{https://github.com/thedylone/tile-segmentation-pipeline}{novel pipeline} for automatic segmentation of 3D Tiles to be used in simulations and data analyses
-        \item Implemented semantic segmentation using a Transformer trained on satellite imagery to label each pixel of the 2D texture, and thereby each vertex of the 3D object
+    \begin{itemize}[leftmargin=!, itemindent=-1em]
+        \item Developed a \href{https://github.com/thedylone/tile-segmentation-pipeline}{novel ML 3D segmentation pipeline} for 3D Tiles to be used in simulations and data analyses
+        \item Implemented semantic segmentation with a Transformer to label a 2D texture to 3D vertex UV mapping
         \item Analysed and deconstructed specifications of formats glTF \& 3D Tiles to construct format readers and exporters to traverse a 3D Tileset and subsequently export a new tileset stored with metadata
         % \item Maintained modularity and version control allowing the team to substitute their segmentation methods effortlessly
         \item Co-authored a \href{https://medium.com/d-classified/segmentation-pipeline-for-3d-tiles-1303fcb5e6be}{write-up on Medium} detailing the development process, and presented to the department's Director
@@ -84,7 +91,7 @@ Passionate about software engineering and simulations, I enjoy designing machine
 
     \DatedSubsection{Simulations Software Development Intern}{Feb 2022 -- Jul 2022}
     \subtitle{Command, Control and Communications Development, Defence Science and Technology Agency \hfill Singapore}
-    \begin{itemize}
+    \begin{itemize}[leftmargin=!, itemindent=-1em]
         \item Designed a \href{https://github.com/thedylone/unity-drone-simulator}{high fidelity simulator using C\# in Unity} to replicate the actual environment and physics of drones
         \item Achieved livestreaming of drone footage via RTSP by capturing camera frames into FFmpeg, as well as remote control of the hunter drone through a networking library ZeroMQ
         \item Enabled the team to quickly test Computer Vision models on the output video stream to identify the target drone, and freely finetune parameters for the PID Navigation Controller to rapidly chase the target drone
@@ -96,7 +103,7 @@ Passionate about software engineering and simulations, I enjoy designing machine
 
     \DatedSubsection{Assistant Counselling Specialist}{Feb 2020 -- Feb 2022}
     \subtitle{SAF Counselling Centre \hfill Singapore}
-    \begin{itemize}
+    \begin{itemize}[leftmargin=!, itemindent=-1em]
         \item Selected as the main specialist in extracting client data from the Jira system using Jira Query Language
         \item Analysed the client data to be presented and reported to stakeholders
         \item Initiated massive workflow automation through VBA scripts in Excel and Outlook to draw information from the Jira system database and rapidly generate emails
@@ -128,43 +135,50 @@ Passionate about software engineering and simulations, I enjoy designing machine
 
 \section{Projects}
 \begin{subsections}
-    \DatedSubsection{Haptic Remote Controller for a Rotating Stage}{Oct 2024 -- Jun 2025}
+    \DatedSubsection{Full Stack \& Cloud Deployed Organisational AI Dashboard}{Feb 2026}
+    \subtitle{\href{https://superintelligent-staff.fly.dev/}{https://superintelligent-staff.fly.dev/} \hfill Massachusetts, United States}
+    \begin{itemize}[leftmargin=!, itemindent=-1em]
+        \item RAG-architecture LLM-integrated dashboard for automated information extraction into actionable items
+        \item \textbf{Skills}: RAG, Graph Databases, React, NodeJS, System integration
+    \end{itemize}
+
+    \hypertarget{proj_DMT}{}\DatedSubsection{Haptic Radio Controller for a Rotating Performing Arts Stage}{Oct 2024 -- Jun 2025}
     \subtitle{MECH60003 - Design, Make and Test Project \hfill Imperial College London, United Kingdom}
-    \begin{itemize}
-        \item Designed hardware and electronics, programmed a Teensy 4.1 Microcontroller for position sensing and radio comms
-        \item \textbf{Skills}: Embedded C
+    \begin{itemize}[leftmargin=!, itemindent=-1em]
+        \item Designed hardware and electronics, programmed a Teensy 4.1 Microcontroller for sonsors and radio comms
+        \item \textbf{Skills}: Embedded C, C++, CAD, Electrical engineering, Teamwork, System integration
     \end{itemize}
 
     \DatedSubsection{Airframe Engineer}{Feb 2024 -- May 2025}
     \subtitle{Karman Space Programme \hfill London, United Kingdom}
-    \begin{itemize}
+    \begin{itemize}[leftmargin=!, itemindent=-1em]
         \item Built a numerical calculator in Python to determine airframe stress for  \href{https://www.karmanspace.co.uk/}{a student rocketry team}
         \item \textbf{Skills}: Beam theory, FEA, Simulation, Teamwork, System integration
     \end{itemize}
 
     \DatedSubsection{Microcontroller Maze Navigation Buggy}{Mar 2025}
     \subtitle{MECH60009 - Embedded C for Microcontrollers \hfill Imperial College London, United Kingdom}
-    \begin{itemize}
+    \begin{itemize}[leftmargin=!, itemindent=-1em]
         \item Programmed a PIC18 Microcontroller \& a colour sensor to rapidly navigate a maze and retrace its steps
         \item \textbf{Skills}: Embedded C
     \end{itemize}
 
-    \DatedSubsection{Numerical analysis of Black-Scholes Partial Differential Equation}{Mar 2024}
-    \subtitle{MECH50003 - Mathematics and Computing 2 \hfill Imperial College London, United Kingdom}
-    \begin{itemize}
-        \item \href{https://github.com/thedylone/black-scholes-numerical}{Utilised explicit finite difference and implicit Crank-Nicolson methods} to solve European-style options price
-        \item \textbf{Skills}: Python, Numerical analysis
-    \end{itemize}
+    % \DatedSubsection{Numerical analysis of Black-Scholes Partial Differential Equation}{Mar 2024}
+    % \subtitle{MECH50003 - Mathematics and Computing 2 \hfill Imperial College London, United Kingdom}
+    % \begin{itemize}
+    %     \item \href{https://github.com/thedylone/black-scholes-numerical}{Utilised explicit finite difference and implicit Crank-Nicolson methods} to solve European-style options price
+    %     \item \textbf{Skills}: Python, Numerical analysis
+    % \end{itemize}
 
-    \Subsection{Game Tracker Discord Bot}
+    \Subsection{Cloud Deployed Game Tracker Discord Bot with Continuous Deployment}
     % \subtitle{laffey bot -- a VALORANT tracker and notifier}
-    \begin{itemize}
+    \begin{itemize}[leftmargin=!, itemindent=-1em]
         \item Developed \href{https://thedylone.github.io/laffey-bot/}{a Discord game tracker} with a PostgreSQL database to store data. Deployed entirely on the cloud
         \item \textbf{Skills}: Python, SQL, API, Cloud computing with PaaS
     \end{itemize}
 
-    \Subsection{Full Stack Video Player}
-    \begin{itemize}
+    \Subsection{Full Stack Video Player Server and Webpage}
+    \begin{itemize}[leftmargin=!, itemindent=-1em]
         \item Built \href{https://github.com/thedylone/node-video-player}{a full-stack video gallery} comprising a backend Node server with APIs, and a frontend React webpage
         \item \textbf{Skills}: React, TypeScript, Vite, NodeJS
     \end{itemize}
@@ -178,10 +192,10 @@ Passionate about software engineering and simulations, I enjoy designing machine
 
 \section{Awards and Achievements}
 \begin{subsections}
-    \DatedEntry{Governors' BEng Prize in Mechanical Engineering: Top Student Overall}{2025}
+    \hypertarget{award_BEng}{\DatedEntry{Governors' BEng Prize in Mechanical Engineering: Top Student Overall}{2025}}
     \DatedEntry{Mechanical Engineering Award: Excellence in Design, Make \& Test -- Best Superproject}{2025}
-    \DatedEntry{Optiver Trading Academy Certificate}{2025}
-    \DatedEntry{\href{https://prosperity.imc.com/}{IMC Prosperity 2 -- 27th Place in Manual Trading}}{2024}
+    % \DatedEntry{Optiver Trading Academy Certificate}{2025}
+    % \DatedEntry{\href{https://prosperity.imc.com/}{IMC Prosperity 2 -- 27th Place in Manual Trading}}{2024}
     % \DatedEntry{Optiver Trading Challenge at IC Hack}{2024}
     \DatedEntry{Mechanical Engineering Prize for Outstanding Academic Performance (Professional Engineering Skills)}{2023}
     \DatedEntry{\href{https://www.ntu.edu.sg/eee/student-life/ideasjam-by-garage@eee-continues-to-drive-the-entrepreneurial-spirit-in-ntu-students}{Nanyang Technological University IdeasJam -- Best Pre-University}}{2022}
@@ -198,7 +212,7 @@ Passionate about software engineering and simulations, I enjoy designing machine
     \item \textbf{Software:} Microsoft 365, Git, VSCode, OriginLab, Unity, Adobe Photoshop, Adobe Premiere Pro
     \item \textbf{3D Design:} SOLIDWORKS, Onshape, ANSYS, Blender
     \item \textbf{Languages:} English (First Language), Mandarin
-    \item \textbf{Interests:} Puzzles \& puzzlehunts, Cooking, Imperial College Baseball and Softball
+    \item \textbf{Interests:} Puzzles \& puzzlehunts (\href{https://puzzles.mit.edu/}{MIT Mystery Hunts}), Cooking, Baseball, Football (aka soccer)
 \end{subsections}
 
 \end{document}
