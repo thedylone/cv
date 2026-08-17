@@ -41,29 +41,31 @@
 {}{0em} % prefix for sections
 {} % code before
 [\titlerule]
+\titlespacing{\section}{0pt}{0.25em}{0.5em}
+
 \titleformat{\subsection}
 {\large\scshape\raggedright\bf}
 {}{0em} % prefix for sections
 {} % code before
 []
-\titlespacing{\subsection}{0pt}{\baselineskip}{2pt}
+\titlespacing{\subsection}{0pt}{0.25em}{0pt}
 
 \newenvironment{subsections}
 {
     \begin{itemize}[leftmargin=0.15in, label={}]
-        }{
+}{
     \end{itemize}
 }
 
-\newcommand{\Subsection}[1]{
-    \item\subsection[#1]{#1}
+\newcommand{\Subsection}[2][]{
+    \item\subsection[#2]{#1#2}
 }
 
 \newcommand{\DatedSection}[2]{%
     \item\section[#1]{#1 \hfill #2}%
 }
-\newcommand{\DatedSubsection}[2]{
-    \item\subsection[#1]{#1 \hfill #2}
+\newcommand{\DatedSubsection}[3][]{
+    \item\subsection[#2]{#1#2 \hfill #3}
 }
 
 % \newcommand{\Name}[4][]{%
@@ -75,12 +77,15 @@
 % }
 
 \newcommand{\Name}[2][]{%
-    \centering{\Huge\textbf{#2}}\hfill #1\\
+    \centering{\fontsize{2.5em}{0pt}\selectfont\textbf{#2}}\hfill #1\\
 }
 
 \newcommand{\DatedEntry}[2]{
     \item
+    \setlength{\tabcolsep}{0pt}
     \begin{tabularx}{\linewidth}{X r}
         #1 & #2
     \end{tabularx}
 }
+
+\setlist{noitemsep, topsep=1pt, partopsep=1pt}

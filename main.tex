@@ -1,218 +1,140 @@
 \documentclass{cv}
 
 \begin{document}
+\newcommand{\linkIcon}{\textnormal\faLink}
+\raggedright
 \Name[]{Dylan Chua}
+\vspace{-3em}
 \begin{minipage}[h]{.33\textwidth-0.33\margin}
     \begin{itemize}
-        \setlength{\itemsep}{0.5em}
-        \item[\Large\faAt] \href{mailto:thedylone@gmail.com}{thedylone@gmail.com}
-        \item[\Large\faLaptop] \href{https://thedylone.pages.dev}{thedylone.pages.dev}
+        \setlength{\itemsep}{0.25em}
+        \item[\faAt] \href{mailto:thedylone@gmail.com}{thedylone@gmail.com}
+        \item[\faLink] \href{https://thedylone.pages.dev}{thedylone.pages.dev}
     \end{itemize}
 \end{minipage}
 \hfill
 \begin{minipage}[h]{.33\textwidth-0.33\margin}
-    \vspace{0.5em}
-    \begin{itemize}
-        \centering
-        \setlength{\itemsep}{0.5em}
-        \item[\Large\faMobile] \href{tel:6582186864}{+65 82186864}
-    \end{itemize}
+
 \end{minipage}
 \hfill
 \begin{minipage}[h]{.33\textwidth-0.33\margin}
-    % \raggedleft
-    \vspace{0.5em}
     \begin{itemize}
         \raggedleft
-        \setlength{\itemsep}{0.5em}
-        \item[\Large\faLinkedinSquare] \href{https://www.linkedin.com/in/thedylone/}{linkedin/thedylone}
-        \item[\Large\faGithub] \href{https://github.com/thedylone}{github/thedylone}
+        \setlength{\itemsep}{0.25em}
+        \item[\faLinkedinSquare] \href{https://www.linkedin.com/in/thedylone/}{linkedin/thedylone}
+        \item[\faGithub] \href{https://github.com/thedylone}{github/thedylone}
     \end{itemize}
 \end{minipage}
+\vspace{0.5em}
 
-\section{Profile}
-\raggedright
-Passionate about software engineering and simulations, I enjoy designing machines and software that address complex challenges. I am self-driven, resourceful, quick to learn, and a team player who thrives in collaborative environments.
+% \section{Profile}
+% \raggedright
+% Passionate about applied maths \& machine learning, I enjoy designing high-performance algorithms \& simulations that address complex stochastic \& physical challenges. Ranked 1st in my cohort at Imperial \& a Harvard SM graduate, I am self-driven, resourceful, \& a fast learner who thrives in collaborative environments bridging research \& scalable software.
 
 \section{Education}
 \begin{subsections}
     \DatedSubsection{Harvard University}{Sep 2025 -- May 2026}
     \subtitle{SM Computational Science and Engineering
-    -- Expected GPA: 3.92 / 4.0
+        -- GPA: 3.92 / 4.0
         \hfill Massachusetts, United States}
-    \begin{itemize}
-        \item Courses: \parbox[t]{\dimexpr\linewidth-\labelwidth-\labelsep\relax-2em}{Design \& Analysis of Algorithms, 
-        High Performance Computing \& Big Data Systems \textit{(Parallel, Distributed, GPU CUDA)}, 
-        Stochastic Methods \& Decision Theory \textit{(Regression, Optimisation, Bayesian Inference)}}
-        \vspace{0.01em}
-        \item Extra-curricular: MIT Puzzle Club
+    \begin{itemize}[leftmargin=!, itemindent=-1em]
+        \item \textbf{Courses}: Stochastic Modelling \& Bayesian Inference, High-Performance Computing \& Distributed Systems, Advanced Algorithmic Design (MIT), Mathematical Optimisation (MIT), Numerical Methods, Decision Theory
     \end{itemize}
 
     \DatedSubsection{Imperial College London}{Oct 2022 -- Jun 2025}
-    \subtitle{BEng Mechanical Engineering -- First Class Honours, 1$^{st}$ in cohort overall 
+    \subtitle{BEng Mechanical Engineering -- First Class Honours, 1$^{st}$ in cohort overall
         \hfill London, United Kingdom}
     \begin{itemize}[leftmargin=!, itemindent=-1em]
-        \item \hyperlink{award_BEng}{Governors' BEng Prize for Top Scorer Overall}
-        \item Modules: Mechatronics \& Machine Dynamics, Mathematics, Computing, Thermofluids, Solid Mechanics
-        \item Dean's List, Top Scorer in Professional Engineering Skills, \hyperlink{proj_DMT}{Best Superproject in Design Make and Test Project}
-        \item Extra-curricular: Undergraduate Teaching Assistant, German
+        \item \textbf{Awards}: Governors' BEng Prize for Top Scorer Overall, Dean's List, Best Superproject (Design, Make and Test)
+        \item \textbf{Relevant Modules}: Mathematics, Computing, Mechatronics \& Machine Dynamics
+    \end{itemize}
+\end{subsections}
+
+\section{Academic Research \& Advanced Projects}
+\begin{subsections}
+    \Subsection{AI Research: A Two-Stage Bayesian Framework for LLM Interpretability}
+    \begin{itemize}[leftmargin=!, itemindent=-1em]
+        \item Proposed a novel Bayesian Model Comparison (BMC) framework to rigorously evaluate linear versus circular manifold feature representations in LLMs, using analytic models to formalise geometric intuition.
+        \item Innovated and implemented Sparse Circular Autoencoders (SCAEs) to extract periodic concepts by encoding magnitude and angle, enabling semantic manifold learning when paired with BMC.
+              % \item Currently preparing a manuscript detailing the BMC and SCAE mathematical frameworks for academic publication.
+    \end{itemize}
+
+    \Subsection[\href{https://thedylone.github.io/CollateralOPT/}{\linkIcon} ]{Computational Capstone: Collateral Optimisation Engine for Securities Financing}
+    \begin{itemize}[leftmargin=!, itemindent=-1em]
+        \item Headed and architected a containerised, scalable, 4-tier collateral optimisation engine for an external financial client.
+        \item Formulated and solved Mixed-Integer Linear Programming models within the core engine, and designed cryptographic groundwork to guarantee transaction integrity with sealed-bids and certificates of optimality.
+    \end{itemize}
+
+    \Subsection[\href{https://github.com/thedylone/baremetal-llama3}{\linkIcon} ]{Custom GPU Inference Engine for Transformer Architectures}
+    \begin{itemize}[leftmargin=!, itemindent=-1em]
+        \item Developed a bare-metal \verb|C++| inference engine for \verb|Llama-3-8B-Instruct| from scratch, managing memory (\verb|mmap| \& GPU) and implementing complete autoregressive decoding without relying on external ML frameworks.
+        \item Engineered optimised \verb|CUDA| kernels for all core operations (\verb|RMSNorm|, \verb|SwiGLU|, \verb|MatMul|) leveraging thread-block shared memory, parallel reductions, and coalesced memory access to optimise arithmetic intensity.
+    \end{itemize}
+
+    \Subsection[\href{https://github.com/thedylone/FFT-accelerated}{\linkIcon} ]{Distributed \& Hardware-Accelerated Fast Fourier Transform (FFT)}
+    \begin{itemize}[leftmargin=!, itemindent=-1em]
+        \item Engineered a distributed FFT computation engine, achieving 7$\times$ speedup over serial by utilising OpenMP for shared-memory multithreading and MPI for multi-node cluster execution, profiling via Intel VTune.
+        \item Accelerated algorithmic throughput by a further 10$\times$ by designing custom CUDA kernels for direct GPU execution, establishing rigorous performance baselines against JIT-compiled JAX arrays.
+    \end{itemize}
+
+    \Subsection[\href{https://github.com/thedylone/black-scholes-numerical}{\linkIcon} ]{Numerical Solution of the Black-Scholes Partial Differential Equation (PDE)}
+    \begin{itemize}[leftmargin=!, itemindent=-1em]
+        \item Formulated the mathematical discretisation steps needed to translate the Black-Scholes PDE into a solvable grid
+        \item Utilised both explicit \& implicit finite difference methods to robustly evaluate options pricing models in \verb|Python|.
     \end{itemize}
 \end{subsections}
 
 \section{Work Experience}
 \begin{subsections}
-    \DatedSubsection{Software Development Intern}{Jun 2025 -- Aug 2025}
-    \subtitle{MathWorks \hfill Cambridge, United Kingdom}
-    \begin{itemize}[leftmargin=!, itemindent=-1em]
-        \item Revamped software architecture in \href{https://www.mathworks.com/products/autosar.html}{AUTOSAR Blockset}, a toolbox for developing AUTOSAR software
-        \item Accelerated software performance up to 90\% faster, with the capacity to significantly speed up customer workflows
-        \item \textbf{Skills}: MATLAB, C++, Agile development, CI/CD
-    \end{itemize}
-
-    % \DatedSubsection{Mechanical Design Intern}{Jul 2024 -- Sep 2024}
-    % \subtitle{Guided Systems, DSO National Laboratories \hfill Singapore}
-    % \begin{itemize}
-    %     \item Derived the physics of torsional and compression springs from beam theory
-    %     \item Formulated Excel sheets to automatically calculate spring parameters (without VBA), accelerating design processes
-    %     \item Conceptualised rope-release mechanisms triggered by gas generators, optimised a selected design to be produced
-    %     \item \textbf{Skills}: Beam theory, CAD, Excel, Onshape, Engineering design process
-    % \end{itemize}
-
-    \DatedSubsection{3D Software Development Intern}{Jul 2023 -- Sep 2023}
+    \DatedSubsection{Engineer}{Jun 2026 -- Present}
     \subtitle{Simulation \& Training Systems Hub, Defence Science and Technology Agency \hfill Singapore}
     \begin{itemize}[leftmargin=!, itemindent=-1em]
-        \item Developed a \href{https://github.com/thedylone/tile-segmentation-pipeline}{novel ML 3D segmentation pipeline} for 3D Tiles to be used in simulations and data analyses
-        \item Implemented semantic segmentation with a Transformer to label a 2D texture to 3D vertex UV mapping
-        \item Analysed and deconstructed specifications of formats glTF \& 3D Tiles to construct format readers and exporters to traverse a 3D Tileset and subsequently export a new tileset stored with metadata
-        % \item Maintained modularity and version control allowing the team to substitute their segmentation methods effortlessly
-        \item Co-authored a \href{https://medium.com/d-classified/segmentation-pipeline-for-3d-tiles-1303fcb5e6be}{write-up on Medium} detailing the development process, and presented to the department's Director
-        \item \textbf{Skills}: Python, System integration, Machine learning
+        \item Oversee the lifecycle of high-fidelity simulations \& training platforms, and drive modern AI adoption in complex systems, by applying computational and system engineering expertise.
     \end{itemize}
 
-    \DatedSubsection{Simulations Software Development Intern}{Feb 2022 -- Jul 2022}
+    \DatedSubsection{Software Development Intern}{Jun 2025 -- Aug 2025}
+    \subtitle{The MathWorks, Inc. \hfill Cambridge, United Kingdom}
+    \begin{itemize}[leftmargin=!, itemindent=-1em]
+        \item Designed and shipped a structural decoupling of the \href{https://www.mathworks.com/products/autosar.html}{AUTOSAR Blockset} architecture model from its metamodel, achieving up to a 90\% reduction in computational latency and significantly accelerating the end-user experience.
+    \end{itemize}
+
+    \DatedSubsection[\href{https://github.com/thedylone/tile-segmentation-pipeline}{\linkIcon} ]{3D Software Development Intern}{Jul 2023 -- Sep 2023}
+    \subtitle{Simulation \& Training Systems Hub, Defence Science and Technology Agency \hfill Singapore}
+    \begin{itemize}[leftmargin=!, itemindent=-1em]
+        \item Architected a modular Transformer-based 3D semantic segmentation pipeline, automating the end-to-end segmentation of 3D models by mapping categorised 2D texture vertices back to 3D polygons. \href{https://medium.com/d-classified/segmentation-pipeline-for-3d-tiles-1303fcb5e6be}{(Writeup showcase)}
+    \end{itemize}
+
+    \DatedSubsection[\href{https://github.com/thedylone/unity-drone-simulator}{\linkIcon} ]{Simulations Software Development Intern}{Feb 2022 -- Jul 2022}
     \subtitle{Command, Control and Communications Development, Defence Science and Technology Agency \hfill Singapore}
     \begin{itemize}[leftmargin=!, itemindent=-1em]
-        \item Designed a \href{https://github.com/thedylone/unity-drone-simulator}{high fidelity simulator using C\# in Unity} to replicate the actual environment and physics of drones
-        \item Achieved livestreaming of drone footage via RTSP by capturing camera frames into FFmpeg, as well as remote control of the hunter drone through a networking library ZeroMQ
-        \item Enabled the team to quickly test Computer Vision models on the output video stream to identify the target drone, and freely finetune parameters for the PID Navigation Controller to rapidly chase the target drone
-        % \item Reduced the need for live testing using actual drones, improving efficiency and workflow for the entire team
-        % \item Added extra functionality for Computer Vision training to automatically generate labelled synthetic data of drones
-        \item Wrote an \href{https://medium.com/d-classified/unity-as-a-testbed-for-autonomy-development-1e326323c68d}{article on Medium} documenting and showcasing its utility in testing Computer Vision
-        \item \textbf{Skills}: C\#, Unity, Computer networking, UI/UX, 3D Modelling, Teamwork
+        \item Developed a high-fidelity drone environment digital twin in \verb|C#|, integrating \verb|ZeroMQ| and \verb|FFmpeg| for low-latency, real-time video telemetry streaming via \verb|RTSP|, as testing infrastructure for computer vision. \href{https://medium.com/d-classified/unity-as-a-testbed-for-autonomy-development-1e326323c68d}{(Writeup showcase)}
     \end{itemize}
 
-    \DatedSubsection{Assistant Counselling Specialist}{Feb 2020 -- Feb 2022}
-    \subtitle{SAF Counselling Centre \hfill Singapore}
-    \begin{itemize}[leftmargin=!, itemindent=-1em]
-        \item Selected as the main specialist in extracting client data from the Jira system using Jira Query Language
-        \item Analysed the client data to be presented and reported to stakeholders
-        \item Initiated massive workflow automation through VBA scripts in Excel and Outlook to draw information from the Jira system database and rapidly generate emails
-        % \item Organised and scheduled client appointments for counsellors, and manned the 24-Hour Counselling Hotline
-        % \item Managed the team of specialists as the appointed leader, which involved interviewing applicants, overseeing the training progression of newer members and assigning the team for the duty roster
-        \item \textbf{Skills}: Data analysis, Database querying, Team management, Counselling and Active Listening
-    \end{itemize}
 \end{subsections}
 
-% \section{Research Experience}
+% \section{Awards and Achievements}
 % \begin{subsections}
-
-%     \DatedSubsection{Transparent, Self-healing and Stretchable Conductor for Electroluminescent Device Applications}{May 2018 -- Jan 2019}
-%     \subtitle{Institute for Health Innovation and Technology, National University of Singapore}
-%     \begin{itemize}
-%         \item Synthesised and characterised a self-healing polymer electrode
-%         \item Won the Singapore Science and Engineering Fair Special Award
-%         \item Speaker at SRP Congress 2019, Won Best Poster Award
-%     \end{itemize}
-
-%     \DatedSubsection{New 'Stimuli'-Responsive Hydrogels for targeted applications}{Mar 2016 -- Jan 2017}
-%     \subtitle{Natural Science and Science Education, Nanyang Technological University}
-%     \begin{itemize}
-%         \item Synthesised and characterised the adsorption of a unique hydrogel
-%         \item Research Education 2016 Bronze Award \& Certificate of High Distinction
-%         \item Presented at Research Exchange Programme with Hyogo Prefectural Kobe High School, Japan
-%     \end{itemize}
+%     \hypertarget{award_BEng}{\DatedEntry{Governors' BEng Prize in Mechanical Engineering: Top Student Overall}{2025}}
+%     \DatedEntry{Mechanical Engineering Award: Excellence in Design, Make \& Test -- Best Superproject}{2025}
+%     % \DatedEntry{Optiver Trading Academy Certificate}{2025}
+%     % \DatedEntry{\href{https://prosperity.imc.com/}{IMC Prosperity 2 -- 27th Place in Manual Trading}}{2024}
+%     % \DatedEntry{Optiver Trading Challenge at IC Hack}{2024}
+%     \DatedEntry{Mechanical Engineering Prize for Outstanding Academic Performance (Professional Engineering Skills)}{2023}
+%     \DatedEntry{\href{https://devpost.com/software/hop-roll-2022}{NUS Hack\&Roll -- Top Prize}, \href{https://www.ntu.edu.sg/eee/student-life/ideasjam-by-garage@eee-continues-to-drive-the-entrepreneurial-spirit-in-ntu-students}{NTU IdeasJam -- Best Pre-University}}{2022}
+%     \DatedEntry{\href{https://www.astrochallenge.org/_files/ugd/b182bf_4243ea380b084eeb97408bc9bbd0e1c5.pdf}{Astrochallenge -- 16\textsuperscript{th} Individual Placing, 2\textsuperscript{nd} Place, Best Observation}}{2019}
+%     \DatedEntry{\href{https://www.science.edu.sg/docs/default-source/scs-documents/for-schools/competitions/ssef/ssef-2019-awards-list_updated-(2).pdf}{Singapore Science and Engineering Fair -- SUTD Sharp Award in Aviation}}{2019}
+%     \DatedEntry{\href{https://astronomy.sg/singapore-astronomy-olympiad/sao-hall-of-fame/}{Singapore Astronomy Olympiad -- Bronze}}{2018}
+%     \DatedEntry{Singapore Junior Physics Olympiad -- Gold}{2017}
+%     % \DatedEntry{\href{https://www.science.edu.sg/docs/default-source/scs-documents/for-schools/competitions/ssef/ssef-2019-awards-list_updated-(2).pdf}{SSEF SUTD Sharp Award (2019)}, \href{https://www.astrochallenge.org/_files/ugd/b182bf_4243ea380b084eeb97408bc9bbd0e1c5.pdf}{Astrochallenge 2\textsuperscript{nd} (2019)}, Singapore Junior Physics Olympiad Gold (2017)}{2017--19}
 % \end{subsections}
-
-\section{Projects}
-\begin{subsections}
-    \DatedSubsection{Full Stack \& Cloud Deployed Organisational AI Dashboard}{Feb 2026}
-    \subtitle{\href{https://superintelligent-staff.fly.dev/}{https://superintelligent-staff.fly.dev/} \hfill Massachusetts, United States}
-    \begin{itemize}[leftmargin=!, itemindent=-1em]
-        \item RAG-architecture LLM-integrated dashboard for automated information extraction into actionable items
-        \item \textbf{Skills}: RAG, Graph Databases, React, NodeJS, System integration
-    \end{itemize}
-
-    \hypertarget{proj_DMT}{}\DatedSubsection{Haptic Radio Controller for a Rotating Performing Arts Stage}{Oct 2024 -- Jun 2025}
-    \subtitle{MECH60003 - Design, Make and Test Project \hfill Imperial College London, United Kingdom}
-    \begin{itemize}[leftmargin=!, itemindent=-1em]
-        \item Designed hardware and electronics, programmed a Teensy 4.1 Microcontroller for sonsors and radio comms
-        \item \textbf{Skills}: Embedded C, C++, CAD, Electrical engineering, Teamwork, System integration
-    \end{itemize}
-
-    \DatedSubsection{Airframe Engineer}{Feb 2024 -- May 2025}
-    \subtitle{Karman Space Programme \hfill London, United Kingdom}
-    \begin{itemize}[leftmargin=!, itemindent=-1em]
-        \item Built a numerical calculator in Python to determine airframe stress for  \href{https://www.karmanspace.co.uk/}{a student rocketry team}
-        \item \textbf{Skills}: Beam theory, FEA, Simulation, Teamwork, System integration
-    \end{itemize}
-
-    \DatedSubsection{Microcontroller Maze Navigation Buggy}{Mar 2025}
-    \subtitle{MECH60009 - Embedded C for Microcontrollers \hfill Imperial College London, United Kingdom}
-    \begin{itemize}[leftmargin=!, itemindent=-1em]
-        \item Programmed a PIC18 Microcontroller \& a colour sensor to rapidly navigate a maze and retrace its steps
-        \item \textbf{Skills}: Embedded C
-    \end{itemize}
-
-    % \DatedSubsection{Numerical analysis of Black-Scholes Partial Differential Equation}{Mar 2024}
-    % \subtitle{MECH50003 - Mathematics and Computing 2 \hfill Imperial College London, United Kingdom}
-    % \begin{itemize}
-    %     \item \href{https://github.com/thedylone/black-scholes-numerical}{Utilised explicit finite difference and implicit Crank-Nicolson methods} to solve European-style options price
-    %     \item \textbf{Skills}: Python, Numerical analysis
-    % \end{itemize}
-
-    \Subsection{Cloud Deployed Game Tracker Discord Bot with Continuous Deployment}
-    % \subtitle{laffey bot -- a VALORANT tracker and notifier}
-    \begin{itemize}[leftmargin=!, itemindent=-1em]
-        \item Developed \href{https://thedylone.github.io/laffey-bot/}{a Discord game tracker} with a PostgreSQL database to store data. Deployed entirely on the cloud
-        \item \textbf{Skills}: Python, SQL, API, Cloud computing with PaaS
-    \end{itemize}
-
-    \Subsection{Full Stack Video Player Server and Webpage}
-    \begin{itemize}[leftmargin=!, itemindent=-1em]
-        \item Built \href{https://github.com/thedylone/node-video-player}{a full-stack video gallery} comprising a backend Node server with APIs, and a frontend React webpage
-        \item \textbf{Skills}: React, TypeScript, Vite, NodeJS
-    \end{itemize}
-
-    % \Subsection{Reddit Bot}
-    % \begin{itemize}
-    %     \item Ran \href{https://github.com/thedylone/suipiss}{a Reddit bot} completely on cloud platforms to access the API and triggers a randomly generated reply when the keyword is present in a new post or comment
-    %     \item \textbf{Skills}: Python, Cloud deployment
-    % \end{itemize}
-\end{subsections}
-
-\section{Awards and Achievements}
-\begin{subsections}
-    \hypertarget{award_BEng}{\DatedEntry{Governors' BEng Prize in Mechanical Engineering: Top Student Overall}{2025}}
-    \DatedEntry{Mechanical Engineering Award: Excellence in Design, Make \& Test -- Best Superproject}{2025}
-    % \DatedEntry{Optiver Trading Academy Certificate}{2025}
-    % \DatedEntry{\href{https://prosperity.imc.com/}{IMC Prosperity 2 -- 27th Place in Manual Trading}}{2024}
-    % \DatedEntry{Optiver Trading Challenge at IC Hack}{2024}
-    \DatedEntry{Mechanical Engineering Prize for Outstanding Academic Performance (Professional Engineering Skills)}{2023}
-    \DatedEntry{\href{https://www.ntu.edu.sg/eee/student-life/ideasjam-by-garage@eee-continues-to-drive-the-entrepreneurial-spirit-in-ntu-students}{Nanyang Technological University IdeasJam -- Best Pre-University}}{2022}
-    \DatedEntry{\href{https://devpost.com/software/hop-roll-2022}{National University of Singapore Hack\&Roll -- Top Prize}}{2022}
-    \DatedEntry{\href{https://www.astrochallenge.org/_files/ugd/b182bf_4243ea380b084eeb97408bc9bbd0e1c5.pdf}{Astrochallenge -- 16\textsuperscript{th} Individual Placing, 2\textsuperscript{nd} Place, Best Observation}}{2019}
-    \DatedEntry{\href{https://www.science.edu.sg/docs/default-source/scs-documents/for-schools/competitions/ssef/ssef-2019-awards-list_updated-(2).pdf}{Singapore Science and Engineering Fair -- SUTD Sharp Award in Aviation}}{2019}
-    \DatedEntry{\href{https://astronomy.sg/singapore-astronomy-olympiad/sao-hall-of-fame/}{Singapore Astronomy Olympiad -- Bronze}}{2018}
-    \DatedEntry{Singapore Junior Physics Olympiad -- Gold}{2017}
-\end{subsections}
 
 \section{Skills}
 \begin{subsections}
-    \item \textbf{Programming:} Python, MATLAB, C++, C\#, TypeScript, HTML/CSS/React, R, \LaTeX
-    \item \textbf{Software:} Microsoft 365, Git, VSCode, OriginLab, Unity, Adobe Photoshop, Adobe Premiere Pro
-    \item \textbf{3D Design:} SOLIDWORKS, Onshape, ANSYS, Blender
-    \item \textbf{Languages:} English (First Language), Mandarin
-    \item \textbf{Interests:} Puzzles \& puzzlehunts (\href{https://puzzles.mit.edu/}{MIT Mystery Hunts}), Cooking, Baseball, Football (aka soccer)
+    \item \textbf{Programming:} \verb|Python|, \verb|C++|, \verb|CUDA|, \verb|MATLAB|, \verb|OpenMP|, \verb|MPI|, \verb|C#|, HTML/CSS/React, \verb|TypeScript|, \verb|SQL|, \verb|R|, \LaTeX
+    \item \textbf{Systems \& Computing:} Linux, Git, Docker, \verb|ZeroMQ|, High-Performance Computing (HPC), Distributed Systems
+    \item \textbf{Mathematics \& AI:} Bayesian Inference, Stochastic Optimisation, Transformer Architectures, Numerical Methods
+    \item \textbf{Languages:} English (1\textsuperscript{st} Language), Mandarin, German
+    \item \textbf{Interests:} Puzzles \& puzzlehunts (\href{https://puzzles.mit.edu/}{MIT Mystery Hunts}), Hackathons, Baseball, Football
 \end{subsections}
 
 \end{document}
