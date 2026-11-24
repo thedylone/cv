@@ -53,3 +53,29 @@ jobs:
           name: ${{ steps.date.outputs.date }}
           tag_name: ${{ steps.tag.outputs.tag }}
           files: DylanChua_CV.pdf
+
+      - name: prepare pages site
+        run: cp DylanChua_CV.pdf site/
+
+      - name: upload pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  # Publishes the site/ folder (index.html + PDF) to GitHub Pages
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: deploy to github pages
+        id: deployment
+        uses: actions/deploy-pages@v4
