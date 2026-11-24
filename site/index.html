@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dylan Chua — CV</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #525659; font-family: system-ui, sans-serif; }
+    header { display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+             padding: .6rem 1rem; background: #1f1f1f; color: #eee; }
+    header a { color: #fff; text-decoration: none; padding: .35rem .8rem; border: 1px solid #666; border-radius: 6px; }
+    header a:hover { background: #333; }
+    object { display: block; width: 100%; height: calc(100% - 3rem); border: 0; }
+    .fallback { color: #eee; padding: 2rem 1rem; text-align: center; }
+    .fallback a { color: #8cf; }
+  </style>
+</head>
+<body>
+  <header>
+    <span>Dylan Chua — CV</span>
+    <a href="DylanChua_CV.pdf" download>Download PDF</a>
+  </header>
+  <object data="DylanChua_CV.pdf" type="application/pdf">
+    <p class="fallback">Your browser can't display PDFs inline.
+      <a href="DylanChua_CV.pdf">Open the CV</a> instead.</p>
+  </object>
+</body>
+</html>
